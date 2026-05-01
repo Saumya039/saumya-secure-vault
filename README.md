@@ -2,6 +2,10 @@
 
 A Vercel-ready encrypted file vault with email/password login and a Neon Postgres database.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Saumya039/saumya-secure-vault&project-name=saumya-secure-vault&repository-name=saumya-secure-vault&env=DATABASE_URL&envDescription=Neon%20Postgres%20connection%20string&envLink=https://vercel.com/marketplace/neon)
+
+Target production domain: `saumyas.dev`
+
 ## Security Model
 
 - Files are encrypted in the browser with AES-GCM before upload.
@@ -14,11 +18,12 @@ This first version stores encrypted files directly in Postgres to stay simple an
 
 ## Vercel Setup
 
-1. Create a Vercel project from this repository.
-2. Add a free Neon Postgres database from Vercel Marketplace.
-3. Set `DATABASE_URL` in the project environment variables.
-4. Deploy. The app auto-creates the needed tables on first use.
-5. Add `saumyas.dev` in Vercel project domains.
+1. Import `https://github.com/Saumya039/saumya-secure-vault` into Vercel.
+2. Keep Framework Preset as `Next.js`.
+3. Add a Neon Postgres database from Vercel Marketplace.
+4. Set `DATABASE_URL` in the project environment variables.
+5. Deploy. The app auto-creates the needed tables on first use.
+6. Add `saumyas.dev` and `www.saumyas.dev` in Vercel project domains.
 
 For DNS, use the exact records Vercel shows in the Domains screen. Vercel currently documents apex domains with an A record of `76.76.21.21`; for `www`, use the CNAME value Vercel shows for the project.
 
