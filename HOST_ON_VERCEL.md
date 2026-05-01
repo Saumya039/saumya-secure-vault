@@ -1,10 +1,17 @@
 # Host Saumya Secure Vault on Vercel
 
+Repository: `https://github.com/Saumya039/saumya-secure-vault`
+
+Production domain target:
+
+- `saumyas.dev`
+- `www.saumyas.dev`
+
 ## Option A: Vercel Dashboard
 
-1. Push this folder to a GitHub repository.
-2. Open https://vercel.com/new.
-3. Import the repository.
+1. Open https://vercel.com/new.
+2. Import `Saumya039/saumya-secure-vault`.
+3. Keep Project Name as `saumya-secure-vault`.
 4. Keep Framework Preset as `Next.js`.
 5. Add a Neon Postgres database from Vercel Marketplace.
 6. Make sure `DATABASE_URL` exists in Project Settings -> Environment Variables for Production, Preview, and Development.
@@ -45,7 +52,7 @@ Name: @
 Value: 76.76.21.21
 ```
 
-For `www`, use the CNAME shown by Vercel in the Domains screen.
+For `www`, use the CNAME shown by Vercel in the Domains screen. Vercel's docs currently show CNAME examples like `cname.vercel-dns-0.com`, but the dashboard value is the one to trust for the specific project.
 
 ## Database
 
